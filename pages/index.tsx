@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <VideoPlayer src="http://pablo-tv-streamer.brazilsouth.azurecontainer.io:8080/memfs/1dca41df-1807-4e1f-af55-f591ac0387a9.m3u8" />
+        <VideoPlayer src="http://localhost:8080/memfs/a26bc009-12d9-44f3-8ecd-b3aaaec679fd.m3u8" />
       </main>
     </>
   )
