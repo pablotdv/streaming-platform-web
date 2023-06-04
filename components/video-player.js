@@ -9,6 +9,7 @@ export default function VideoPlayer({ src }) {
         if (!video) return
 
         video.controls = true
+        video.autoPlay = true
         if (video.canPlayType('application/vnd.apple.mpegurl')) {
           video.src = src
         } else if (Hls.isSupported()) {
@@ -22,7 +23,7 @@ export default function VideoPlayer({ src }) {
 
     return (
         <>
-          <video ref={videoRef} />
+          <video ref={videoRef} autoPlay={true} />
           <style jsx>{`
             video {
               max-width: 100%;
